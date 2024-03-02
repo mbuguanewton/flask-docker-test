@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "flask-docker"
+version = "0.1.0"
+description = "Learning docker with flask"
+authors = ["Newton Mbugua <mymbugua@gmail.com>"]
+readme = "README.md"
+packages = [{include = "flask_docker"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.0"
+gunicorn = "^21.2.0"
+
+[tool.poetry.group.dev.dependencies]
+Flask = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

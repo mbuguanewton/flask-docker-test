@@ -1,0 +1,19 @@
+{
+  "name": "flask-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "totxt":"poetry export -f requirements.txt --output requirements.txt --without-hashes",
+    "build": "docker build -t flask-docker .",
+    "run": "docker run -p 8000:5000 flask-docker"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
+  }
+}
